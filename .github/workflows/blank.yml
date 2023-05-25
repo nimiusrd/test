@@ -23,4 +23,4 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           target_repository: 'nimiusrd/test'
           base_branch: "test"
-          patterns: 'src/**/*'
+          patterns: 'dir*/*,!dir2/*'

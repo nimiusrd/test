@@ -23,5 +23,4 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           target_repository: 'https://github.com/nimiusrd/test.git'
           base_branch: "test"
-          pr_branch_name: 'sync-template-repository'
           patterns: 'src/**/*'

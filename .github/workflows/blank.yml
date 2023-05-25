@@ -21,6 +21,6 @@ jobs:
       - uses: nimiusrd/sync-template-repository@main
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          target_repository: 'https://github.com/nimiusrd/test.git'
+          target_repository: 'nimiusrd/test'
           base_branch: "test"
           patterns: 'src/**/*'

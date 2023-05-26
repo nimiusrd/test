@@ -4,6 +4,9 @@ name: CI
 
 # Controls when the workflow will run
 on:
+  schedule:
+    # Sync monthly
+    - cron: '0 0 1 * *'
   workflow_dispatch:
     inputs:
       patterns:

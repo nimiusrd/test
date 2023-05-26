@@ -20,7 +20,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      - uses: nimiusrd/sync-template-repository@v1.0.0
+      - uses: nimiusrd/sync-template-repository@v1.0
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           target_repository: 'nimiusrd/test'

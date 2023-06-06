@@ -26,4 +26,4 @@ jobs:
           target_repository: 'nimiusrd/test'
           base_branch: "test"
           include_patterns: 'dir*/*'
-          exclude_patterns: 'dir4/*
+          exclude_patterns: 'dir4/*'

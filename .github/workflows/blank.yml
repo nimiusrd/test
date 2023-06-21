@@ -8,6 +8,11 @@ on:
     # Sync monthly
     - cron: '0 0 1 * *'
   workflow_dispatch:
+    inputs:
+      include_patterns:
+        type: string
+      exclude_patterns:
+        type: string
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -25,5 +30,5 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           target_repository: 'nimiusrd/test'
           base_branch: "test"
-          include_patterns: 'dir*/*'
-          exclude_patterns: 'dir4/*'
+          include_patterns: 'dir*/* ${{ inputs.include_patterns }}'
+          exclude_patterns: 'dir4/* ${{ inputs.exclude_patterns }}'
